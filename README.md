@@ -1,4 +1,10 @@
-# CloudFormation Fully Deploy
+# CloudFormation Wait Deploy
+
+![npm](https://img.shields.io/npm/v/cf-wait-deploy.svg)
+![downloads](https://img.shields.io/npm/dm/cf-wait-deploy.svg)
+![maintained](https://img.shields.io/badge/Maintained%20%3F-yes-green.svg)
+[![GitHub issues](https://img.shields.io/github/issues/hlefebvr/cf-wait-deploy.svg)](https://github.com/hlefebvr/cf-wait-deploy/issues)
+[![GitHub license](https://img.shields.io/github/license/hlefebvr/cf-wait-deploy.svg)](https://github.com/hlefebvr/cf-wait-deploy)
 
 This node module enables you to deploy a cloudformation template and to wait for every resource to be created.
 
@@ -60,6 +66,6 @@ with a `deploy-params.js` file as follow (this is an example) :
 When activated, verbose mode is powered by the excellent `table` node module and outputs results like so :
 
 - In case of success :
-  ![success deploy](./img/success_table.png)
+  ![success deploy](https://raw.githubusercontent.com/hlefebvr/cf-wait-deploy/master/img/success_table.png)
 - In case of faillure (plus a raised exception) :
-  ![fail deploy](./img/fail_table.png)
+  ![fail deploy](https://raw.githubusercontent.com/hlefebvr/cf-wait-deploy/master/img/fail_table.png)

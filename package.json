@@ -1,12 +1,20 @@
 {
   "name": "cf-wait-deploy",
   "version": "1.0.0",
-  "description": "",
+  "description": "deploy a cloudformation template and wait for every resource to be created",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [
+    "cloudformation",
+    "deploy",
+    "synchronous",
+    "asynchronous",
+    "waitFor",
+    "aws"
+  ],
+  "author": "Henri Lefebvre",
   "license": "MIT",
   "devDependencies": {
     "aws-sdk": "^2.288.0",
