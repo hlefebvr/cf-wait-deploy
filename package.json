@@ -1,6 +1,6 @@
 {
   "name": "cf-wait-deploy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "deploy a cloudformation template and wait for every resource to be created",
   "main": "src/index.js",
   "scripts": {
