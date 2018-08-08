@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "cf-wait-deploy": "./bin/index.js"
+  },
   "keywords": [
     "cloudformation",
     "deploy",
@@ -17,7 +20,6 @@
   "author": "Henri Lefebvre",
   "license": "MIT",
   "devDependencies": {
-    "aws-sdk": "^2.288.0",
     "chai": "^4.1.2",
     "eslint": "^5.1.0",
     "eslint-config-airbnb-base": "^11.3.1",
@@ -31,6 +33,7 @@
     "mocha": "^4.0.1"
   },
   "dependencies": {
+    "aws-sdk": "^2.288.0",
     "table": "^3.0.0"
   }
 }

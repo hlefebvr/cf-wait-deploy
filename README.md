@@ -12,6 +12,8 @@ It returns a promise which resolves when the stack's status indicates all resour
 
 You can install it via npm using `npm install --save-dev cf-wait-deploy`
 
+You can also install it globally (see global documentation bellow) via npm `npm i -g cf-wait-deploy`
+
 This module can be used for automated testing and integration.
 
 # Documentation
@@ -69,3 +71,26 @@ When activated, verbose mode is powered by the excellent `table` node module and
   ![success deploy](https://raw.githubusercontent.com/hlefebvr/cf-wait-deploy/master/img/success_table.png)
 - In case of faillure (plus a raised exception) :
   ![fail deploy](https://raw.githubusercontent.com/hlefebvr/cf-wait-deploy/master/img/fail_table.png)
+
+# Global usage
+
+You can use this a a global module as well. If installed globally, you can run :
+
+```
+cf-wait-deploy --stack-name exampleStackName --region eu-central-1 --tempalte-file ./tempalte.json
+```
+
+Available options are :
+
+- `--region` : (Mandatory) the region you want to deploy to
+- `--stack-name` : (Mandatory) you stack name
+- `--template-file` : (at least on of template-file, template-body or template-url is mandatory) the path to a `.json` file or `.js` file exporting your template as an object
+- `--template-url` : url of your template
+- `--template-body` : body template in form of stringified JSON
+- `--verbose` : false will disable verbose mode (which is enabled by default in command line)
+- `--refresh-rate` : the refresh rate for pulling CloudFormation events
+- `--role-arn` : the role you want to use while deploying your stack
+- `--parameters` : stringified JSON to pass CF parameters
+- `--capabilities` : (CAPABILITY_IAM | CAPABILITY_NAMED_IAM) the capability you want to use to deploy your stage
+
+If you need any other parameter, please open an issue.
