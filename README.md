@@ -46,19 +46,19 @@ waitDeploy(deployParams).then(() =>
 with a `deploy-params.js` file as follow (this is an example) :
 
 ```javascript
-{
-  "StackName": "myStackName",
-  "TemplateBody": JSON.stringify({
-      ssmParameterExample: {
-        Type: 'AWS::SSM::Parameter',
-        Properties: {
-            Name: `example-ssm`,
-            Type: 'String',
-            Value: "this an example resource to deploy"
-        }
+module.exports = {
+  StackName: "myStackName",
+  TemplateBody: JSON.stringify({
+    ssmParameterExample: {
+      Type: "AWS::SSM::Parameter",
+      Properties: {
+        Name: `example-ssm`,
+        Type: "String",
+        Value: "this an example resource to deploy"
+      }
     }
   })
-}
+};
 ```
 
 # Verbose mode
