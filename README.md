@@ -74,7 +74,7 @@ When activated, verbose mode is powered by the excellent `table` node module and
 
 # Global usage
 
-You can use this a a global module as well. If installed globally, you can run :
+You can use this as a global module as well. If installed globally, you can run :
 
 ```
 cf-wait-deploy --stack-name exampleStackName --region eu-central-1 --tempalte-file ./tempalte.json
@@ -84,7 +84,7 @@ Available options are :
 
 - `--region` : (Mandatory) the region you want to deploy to
 - `--stack-name` : (Mandatory) you stack name
-- `--template-file` : (at least on of template-file, template-body or template-url is mandatory) the path to a `.json` file or `.js` file exporting your template as an object
+- `--template-file` : (at least one of template-file, template-body or template-url is mandatory) the path to a `.json` file or `.js` file exporting your template as an object
 - `--template-url` : url of your template
 - `--template-body` : body template in form of stringified JSON
 - `--verbose` : false will disable verbose mode (which is enabled by default in command line)
